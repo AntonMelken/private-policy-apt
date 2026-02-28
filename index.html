@@ -96,7 +96,7 @@
       border-radius: 12px; padding: 20px 24px; text-align: center; margin-top: 40px;
     }
     /* ── NEW: missing highlight ── */
-    .email-placeholder { color: var(--warn); font-weight: 700; }
+    .contact-email { color: var(--warn); font-weight: 700; }
     /* ── Icon colors ── */
     .icon-purple { background: rgba(129,140,248,.15); }
     .icon-green  { background: rgba(34,197,94,.15); }
@@ -137,14 +137,14 @@
       <div>
         <div class="section-num de">1. Verantwortlicher</div>
         <div class="section-num en" style="display:none">1. Data Controller</div>
-        <div class="section-title">Anton Melken</div>
+        <div class="section-title">Anton Melnychuk</div>
       </div>
     </div>
-    <p class="de"><span class="label">E-Mail:</span> <span class="email-placeholder">⚠ [DEINE-EMAIL HIER EINTRAGEN]</span><br>
+    <p class="de"><span class="label">E-Mail:</span> <span style="color: var(--accent2); font-weight: 600;">antosic200@gmail.com</span><br>
       <span class="label">Antwortzeit:</span> innerhalb von 72 Stunden.<br>
       Beschwerden: Hessischer Beauftragter für Datenschutz und Informationsfreiheit, Poststraße 22, 65189 Wiesbaden. Art. 77 DSGVO.
     </p>
-    <p class="en" style="display:none"><span class="label">Email:</span> <span class="email-placeholder">⚠ [ENTER YOUR EMAIL HERE]</span><br>
+    <p class="en" style="display:none"><span class="label">Email:</span> <span style="color: var(--accent2); font-weight: 600;">antosic200@gmail.com</span><br>
       <span class="label">Response time:</span> within 72 hours.<br>
       Supervisory authority: Hessischer Beauftragter für Datenschutz, Poststraße 22, 65189 Wiesbaden, Germany. Art. 77 GDPR.
     </p>
@@ -341,8 +341,8 @@
       <li>Withdrawal of consent (Art. 7(3)) – At any time, without giving reasons</li>
       <li>Lodge complaint with supervisory authority (Art. 77)</li>
     </ul>
-    <p class="de" style="margin-top:8px">Zur Ausübung deiner Rechte: <span class="email-placeholder">⚠ [DEINE-EMAIL HIER]</span></p>
-    <p class="en" style="display:none; margin-top:8px">To exercise your rights: <span class="email-placeholder">⚠ [YOUR EMAIL HERE]</span></p>
+    <p class="de" style="margin-top:8px">Zur Ausübung deiner Rechte: <span style="color: var(--accent2); font-weight: 600;">antosic200@gmail.com</span></p>
+    <p class="en" style="display:none; margin-top:8px">To exercise your rights: <span style="color: var(--accent2); font-weight: 600;">antosic200@gmail.com</span></p>
   </div>
 
   <!-- ⑩ DATENSICHERHEIT -->
@@ -496,22 +496,13 @@
     <p style="font-size:18px; margin-bottom:8px">🔒</p>
     <p class="de" style="font-weight:700; color:#fff; font-size:16px; margin-bottom:8px">Fragen zum Datenschutz?</p>
     <p class="en" style="display:none; font-weight:700; color:#fff; font-size:16px; margin-bottom:8px">Questions about privacy?</p>
-    <p class="de" style="color:var(--muted)">Kontaktiere uns: <span class="email-placeholder">⚠ [DEINE-EMAIL@EXAMPLE.COM]</span> · Antwort innerhalb 72 Stunden</p>
-    <p class="en" style="display:none; color:var(--muted)">Contact us: <span class="email-placeholder">⚠ [YOUR-EMAIL@EXAMPLE.COM]</span> · Response within 72 hours</p>
+    <p class="de" style="color:var(--muted)">Kontaktiere uns: <span style="color: var(--accent2); font-weight: 600;">antosic200@gmail.com</span> · Antwort innerhalb 72 Stunden</p>
+    <p class="en" style="display:none; color:var(--muted)">Contact us: <span style="color: var(--accent2); font-weight: 600;">antosic200@gmail.com</span> · Response within 72 hours</p>
   </div>
 
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function setLang(lang) {
   document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? '' : 'none');
-  document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
-  document.getElementById('btn-de').classList.toggle('active', lang === 'de');
-  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-  document.documentElement.lang = lang;
-}
-// Default: DE
-document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
-</script>
-</body>
-</html>
+  document.querySelectorAll('.en').forEach(el => el.sty
